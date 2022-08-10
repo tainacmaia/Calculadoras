@@ -47,6 +47,7 @@
             this.btnLimpar = new System.Windows.Forms.Label();
             this.btnRetornar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnPonto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txbResultado
@@ -220,7 +221,7 @@
             this.btnSoma.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSoma.Location = new System.Drawing.Point(258, 94);
             this.btnSoma.Name = "btnSoma";
-            this.btnSoma.Size = new System.Drawing.Size(35, 36);
+            this.btnSoma.Size = new System.Drawing.Size(35, 24);
             this.btnSoma.TabIndex = 20;
             this.btnSoma.Text = "+";
             this.btnSoma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,9 +232,9 @@
             this.btnSub.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSub.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnSub.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSub.Location = new System.Drawing.Point(258, 144);
+            this.btnSub.Location = new System.Drawing.Point(258, 132);
             this.btnSub.Name = "btnSub";
-            this.btnSub.Size = new System.Drawing.Size(35, 35);
+            this.btnSub.Size = new System.Drawing.Size(35, 25);
             this.btnSub.TabIndex = 21;
             this.btnSub.Text = "-";
             this.btnSub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,9 +245,9 @@
             this.btnMult.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnMult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnMult.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMult.Location = new System.Drawing.Point(258, 191);
+            this.btnMult.Location = new System.Drawing.Point(258, 170);
             this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(35, 35);
+            this.btnMult.Size = new System.Drawing.Size(35, 26);
             this.btnMult.TabIndex = 22;
             this.btnMult.Text = "*";
             this.btnMult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -257,9 +258,9 @@
             this.btnDiv.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDiv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnDiv.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDiv.Location = new System.Drawing.Point(258, 243);
+            this.btnDiv.Location = new System.Drawing.Point(258, 211);
             this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(35, 35);
+            this.btnDiv.Size = new System.Drawing.Size(35, 27);
             this.btnDiv.TabIndex = 23;
             this.btnDiv.Text = "/";
             this.btnDiv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -314,6 +315,19 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // btnPonto
+            // 
+            this.btnPonto.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnPonto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnPonto.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPonto.Location = new System.Drawing.Point(258, 251);
+            this.btnPonto.Name = "btnPonto";
+            this.btnPonto.Size = new System.Drawing.Size(35, 27);
+            this.btnPonto.TabIndex = 28;
+            this.btnPonto.Text = ".";
+            this.btnPonto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPonto.Click += new System.EventHandler(this.btnPonto_Click);
+            // 
             // FrmCalculadoraSimples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -321,6 +335,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(318, 322);
             this.ControlBox = false;
+            this.Controls.Add(this.btnPonto);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.btnLimpar);
@@ -369,5 +384,6 @@
         private Label btnLimpar;
         private Button btnRetornar;
         private Button btnSair;
+        private Label btnPonto;
     }
 }

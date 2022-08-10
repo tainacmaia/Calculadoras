@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,7 @@ namespace Calculadoras
         bool limpar = true;
         bool teveResultado = true;
         char[] operadores = { '+', '-', '*', '/' };
+        Regex regex = new(@"^\d$");
         public FrmCalculadoraSimples()
         {
             InitializeComponent();
@@ -219,6 +221,19 @@ namespace Calculadoras
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPonto_Click(object sender, EventArgs e)
+        {
+            if (txbResultado.Text != "" && 
+                char.IsDigit(txbResultado.Text[txbResultado.Text.Length - 1]) &&
+                !txbResultado.Text.Contains('.'))
+            {
+                txbResultado.Text += ".";
+            }
+            else
+            {
+            }
         }
     }
 }
