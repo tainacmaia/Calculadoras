@@ -41,6 +41,7 @@
             this.lblkg = new System.Windows.Forms.Label();
             this.lblcm = new System.Windows.Forms.Label();
             this.btnRetornar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,13 +166,24 @@
             // 
             // btnRetornar
             // 
-            this.btnRetornar.Location = new System.Drawing.Point(239, 378);
+            this.btnRetornar.Location = new System.Drawing.Point(163, 384);
             this.btnRetornar.Name = "btnRetornar";
             this.btnRetornar.Size = new System.Drawing.Size(159, 23);
             this.btnRetornar.TabIndex = 27;
             this.btnRetornar.Text = "Retornar ao Menu Inicial";
             this.btnRetornar.UseVisualStyleBackColor = true;
             this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.Location = new System.Drawing.Point(363, 384);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 28;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // FrmCalculaIMC
             // 
@@ -180,6 +192,7 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(632, 419);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.lblcm);
             this.Controls.Add(this.lblkg);
@@ -216,5 +229,6 @@
         private Label lblkg;
         private Label lblcm;
         private Button btnRetornar;
+        private Button btnSair;
     }
 }

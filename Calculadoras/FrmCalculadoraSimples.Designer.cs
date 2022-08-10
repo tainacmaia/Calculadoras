@@ -46,6 +46,7 @@
             this.btnCalcular = new System.Windows.Forms.Label();
             this.btnLimpar = new System.Windows.Forms.Label();
             this.btnRetornar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbResultado
@@ -294,13 +295,24 @@
             // 
             // btnRetornar
             // 
-            this.btnRetornar.Location = new System.Drawing.Point(81, 287);
+            this.btnRetornar.Location = new System.Drawing.Point(25, 287);
             this.btnRetornar.Name = "btnRetornar";
             this.btnRetornar.Size = new System.Drawing.Size(159, 23);
             this.btnRetornar.TabIndex = 26;
             this.btnRetornar.Text = "Retornar ao Menu Inicial";
             this.btnRetornar.UseVisualStyleBackColor = true;
             this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.Location = new System.Drawing.Point(190, 287);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(103, 23);
+            this.btnSair.TabIndex = 27;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // FrmCalculadoraSimples
             // 
@@ -309,6 +321,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(318, 322);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
@@ -355,5 +368,6 @@
         private Label btnCalcular;
         private Label btnLimpar;
         private Button btnRetornar;
+        private Button btnSair;
     }
 }
