@@ -221,7 +221,7 @@
             this.btnSoma.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSoma.Location = new System.Drawing.Point(258, 94);
             this.btnSoma.Name = "btnSoma";
-            this.btnSoma.Size = new System.Drawing.Size(35, 24);
+            this.btnSoma.Size = new System.Drawing.Size(35, 27);
             this.btnSoma.TabIndex = 20;
             this.btnSoma.Text = "+";
             this.btnSoma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -234,7 +234,7 @@
             this.btnSub.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSub.Location = new System.Drawing.Point(258, 132);
             this.btnSub.Name = "btnSub";
-            this.btnSub.Size = new System.Drawing.Size(35, 25);
+            this.btnSub.Size = new System.Drawing.Size(35, 27);
             this.btnSub.TabIndex = 21;
             this.btnSub.Text = "-";
             this.btnSub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,9 +245,9 @@
             this.btnMult.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnMult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnMult.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMult.Location = new System.Drawing.Point(258, 170);
+            this.btnMult.Location = new System.Drawing.Point(258, 171);
             this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(35, 26);
+            this.btnMult.Size = new System.Drawing.Size(35, 27);
             this.btnMult.TabIndex = 22;
             this.btnMult.Text = "*";
             this.btnMult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

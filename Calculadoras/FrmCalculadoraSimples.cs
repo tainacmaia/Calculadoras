@@ -17,7 +17,6 @@ namespace Calculadoras
         bool limpar = true;
         bool teveResultado = true;
         char[] operadores = { '+', '-', '*', '/' };
-        Regex regex = new(@"^\d$");
         public FrmCalculadoraSimples()
         {
             InitializeComponent();
