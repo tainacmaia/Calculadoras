@@ -78,7 +78,7 @@
             this.btnCalculaIMC.Location = new System.Drawing.Point(94, 123);
             this.btnCalculaIMC.Name = "btnCalculaIMC";
             this.btnCalculaIMC.Size = new System.Drawing.Size(178, 38);
-            this.btnCalculaIMC.TabIndex = 7;
+            this.btnCalculaIMC.TabIndex = 2;
             this.btnCalculaIMC.Text = "Calculadora de IMC";
             this.btnCalculaIMC.UseVisualStyleBackColor = false;
             this.btnCalculaIMC.Click += new System.EventHandler(this.btnCalculaIMC_Click);
@@ -91,7 +91,7 @@
             this.btnCalculadoraSimples.Location = new System.Drawing.Point(94, 167);
             this.btnCalculadoraSimples.Name = "btnCalculadoraSimples";
             this.btnCalculadoraSimples.Size = new System.Drawing.Size(178, 38);
-            this.btnCalculadoraSimples.TabIndex = 9;
+            this.btnCalculadoraSimples.TabIndex = 3;
             this.btnCalculadoraSimples.Text = "Calculadora Simples";
             this.btnCalculadoraSimples.UseVisualStyleBackColor = false;
             this.btnCalculadoraSimples.Click += new System.EventHandler(this.btnCalculadoraSimples_Click);
