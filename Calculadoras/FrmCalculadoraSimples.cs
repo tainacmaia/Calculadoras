@@ -99,7 +99,14 @@ namespace Calculadoras
         private void btnSoma_Click(object sender, EventArgs e)
         {
             if (operadores.Any(x => txbResultado.Text.Contains(x)) ||
-                txbResultado.Text == "") { }
+                txbResultado.Text == "")
+            {
+                if (txbResultado.Text.Contains('-') &&
+                    txbResultado.Text.StartsWith('-'))
+                {
+                    txbResultado.Text += "+";
+                }
+            }
             else
             {
                 txbResultado.Text += "+";
@@ -110,7 +117,14 @@ namespace Calculadoras
         private void btnSub_Click(object sender, EventArgs e)
         {
             if (operadores.Any(x => txbResultado.Text.Contains(x)) ||
-                txbResultado.Text == "") { }
+                txbResultado.Text == "")
+            {
+                if (txbResultado.Text.Contains('-') &&
+                    txbResultado.Text.StartsWith('-'))
+                {
+                    txbResultado.Text += "-";
+                }
+            }
             else
             {
                 txbResultado.Text += "-";
@@ -122,6 +136,11 @@ namespace Calculadoras
             if (operadores.Any(x => txbResultado.Text.Contains(x)) ||
                 txbResultado.Text == "")
             {
+                if (txbResultado.Text.Contains('-') &&
+                txbResultado.Text.StartsWith('-'))
+                {
+                    txbResultado.Text += "*";
+                }
             }
             else
             {
@@ -134,6 +153,11 @@ namespace Calculadoras
             if (operadores.Any(x => txbResultado.Text.Contains(x)) ||
                 txbResultado.Text == "")
             {
+                if (txbResultado.Text.Contains('-') &&
+                txbResultado.Text.StartsWith('-'))
+                {
+                    txbResultado.Text += "/";
+                }
             }
             else
             {
@@ -174,7 +198,7 @@ namespace Calculadoras
         private void ChecarLimpeza()
         {
             if (limpar && teveResultado && !operadores.Any(x => txbResultado.Text.EndsWith(x)))
-            { txbResultado.Clear(); limpar = false;}
+            { txbResultado.Clear(); limpar = false; }
         }
         private void txbResultado_TextChanged(object sender, EventArgs e)
         {

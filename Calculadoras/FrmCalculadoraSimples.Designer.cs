@@ -61,7 +61,6 @@
             this.txbResultado.Size = new System.Drawing.Size(268, 33);
             this.txbResultado.TabIndex = 0;
             this.txbResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txbResultado.TextChanged += new System.EventHandler(this.txbResultado_TextChanged);
             // 
             // btn1
             // 
@@ -173,6 +172,7 @@
             this.btn8.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btn8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn8.Location = new System.Drawing.Point(103, 94);
             this.btn8.Margin = new System.Windows.Forms.Padding(0);
