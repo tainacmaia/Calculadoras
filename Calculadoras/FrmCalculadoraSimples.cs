@@ -102,7 +102,8 @@ namespace Calculadoras
                 txbResultado.Text == "")
             {
                 if (txbResultado.Text.Contains('-') &&
-                    txbResultado.Text.StartsWith('-'))
+                txbResultado.Text.StartsWith('-') &&
+                (txbResultado.Text.Count(x => txbResultado.Text.Contains(x)) <= 2))
                 {
                     txbResultado.Text += "+";
                 }
@@ -116,11 +117,11 @@ namespace Calculadoras
 
         private void btnSub_Click(object sender, EventArgs e)
         {
-            if (operadores.Any(x => txbResultado.Text.Contains(x)) ||
-                txbResultado.Text == "")
+            if (operadores.Any(x => txbResultado.Text.Contains(x)))
             {
                 if (txbResultado.Text.Contains('-') &&
-                    txbResultado.Text.StartsWith('-'))
+                txbResultado.Text.StartsWith('-') &&
+                (txbResultado.Text.Count(f => f == '-') < 2))
                 {
                     txbResultado.Text += "-";
                 }
@@ -137,7 +138,8 @@ namespace Calculadoras
                 txbResultado.Text == "")
             {
                 if (txbResultado.Text.Contains('-') &&
-                txbResultado.Text.StartsWith('-'))
+                txbResultado.Text.StartsWith('-') &&
+                (txbResultado.Text.Count(x => txbResultado.Text.Contains(x)) <= 2))
                 {
                     txbResultado.Text += "*";
                 }
@@ -154,7 +156,8 @@ namespace Calculadoras
                 txbResultado.Text == "")
             {
                 if (txbResultado.Text.Contains('-') &&
-                txbResultado.Text.StartsWith('-'))
+                txbResultado.Text.StartsWith('-') &&
+                (txbResultado.Text.Count(x => txbResultado.Text.Contains(x)) <= 2))
                 {
                     txbResultado.Text += "/";
                 }
